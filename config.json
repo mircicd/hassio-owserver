@@ -3,21 +3,21 @@
   "version": "0.2.1.1",
   "slug": "owserver",
   "description": "onewire server to read 1-Wire devices",
-  "url": "https://github.com/lrybak/hassio-owserver",
+  "url": "https://github.com/mircicd/hassio-owserver",
   "startup": "system",
   "init": false,
   "arch": ["aarch64", "amd64", "armhf", "armv7"],
-  "boot": "auto",  
+  "boot": "auto",
   "uart": true,
   "options": {
     "owhttpd": true,
-    "device": ""
+    "server": ""
   },
   "schema": {
     "owhttpd": "bool",
-    "device": "str?"
+    "server": "str?"
   },
   "ingress": true,
   "panel_icon": "mdi:alpha-w-box",
-  "image": "ghcr.io/lrybak/owserver/{arch}"
+  "image": "ghcr.io/mircicd/owserver/{arch}"
 }
