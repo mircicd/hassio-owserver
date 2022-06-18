@@ -24,8 +24,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Run add-on information action
         id: information
-        # uses: frenck/action-addon-information@v1
-        uses: lrybak/action-addon-information@v1.0.5
+        uses: mircicd/action-addon-information@v1.0.5
       - name: ℹ️ Gather version
         id: release
         run: |
@@ -91,13 +90,13 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/lrybak/${{ needs.information.outputs.slug }}/${{ matrix.architecture }}:${{ needs.information.outputs.version }}
+            ghcr.io/mircicd/${{ needs.information.outputs.slug }}/${{ matrix.architecture }}:${{ needs.information.outputs.version }}
           context: ${{ needs.information.outputs.target }}
           file: ${{ needs.information.outputs.target }}/Dockerfile
           cache-from: |
-            ghcr.io/lrybak/${{ needs.information.outputs.slug }}/${{ matrix.architecture }}:cache
+            ghcr.io/mircicd/${{ needs.information.outputs.slug }}/${{ matrix.architecture }}:cache
           cache-to: |
-            ghcr.io/lrybak/${{ needs.information.outputs.slug }}/${{ matrix.architecture }}:cache
+            ghcr.io/mircicd/${{ needs.information.outputs.slug }}/${{ matrix.architecture }}:cache
           platforms: ${{ steps.flags.outputs.platform }}
           build-args: |
             BUILD_ARCH=${{ matrix.architecture }}
