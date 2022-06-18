@@ -1,9 +1,14 @@
 # Changelog
 
+## 0.2.2
+
+- Forked repository (from **https://github.com/lrybak/hassio-addons/owserver** to: **https://github.com/mircicd/hassio-owserver**)
+- Add support to configure `server` field of owconfig freely.
+
 ## 0.2.1
 
 - Upgrades addon-base to 10.0.2
-- Changes auto_uart to uart for Home Assistant compatibility 
+- Changes auto_uart to uart for Home Assistant compatibility
 
 ## 0.2.0
 
