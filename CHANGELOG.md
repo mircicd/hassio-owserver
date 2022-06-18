@@ -4,6 +4,7 @@
 
 - Forked repository (from **https://github.com/lrybak/hassio-addons/owserver** to: **https://github.com/mircicd/hassio-owserver**)
 - Add support to configure `server` field of owconfig freely.
+- Upgrade addon-base to 12.2.0
 
 ## 0.2.1
 
