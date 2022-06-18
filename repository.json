@@ -1,5 +1,5 @@
 {
   "name": "Hass.io owserver (1-Wire) addon",
-  "url": "https://github.com/lrybak/hassio-owserver",
+  "url": "https://github.com/mircicd/hassio-owserver",
   "maintainer": "Łukasz Rybak <lukasz.rybak@gmail.com>"
 }
