@@ -44,6 +44,7 @@ RUN apk add --no-cache --virtual .build-deps alpine-keys bash automake make git 
 	
 # Copy data for add-on
 COPY rootfs /
+RUN chmod +x /etc/cont-init.d/owserver.sh
 
 # Build arguments
 ARG BUILD_ARCH
