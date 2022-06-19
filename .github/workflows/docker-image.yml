@@ -24,8 +24,6 @@ jobs:
       - name: 🚀 Run add-on information
         id: information
         uses: lrybak/action-addon-information@v1.0.5
-        with:
-          path: "./"
       - name: ℹ️ Gather version
         id: release
         run: |
