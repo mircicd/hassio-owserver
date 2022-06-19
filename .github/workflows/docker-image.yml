@@ -6,7 +6,6 @@ on:
       - published
       - edited
 
-
 jobs:
   information:
     name: Gather add-on information
@@ -24,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Run add-on information action
         id: information
-        uses: mircicd/action-addon-information@v1.0.5
+        uses: frenck/action-addon-information@v1
       - name: ℹ️ Gather version
         id: release
         run: |
