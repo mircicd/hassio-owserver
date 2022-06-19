@@ -19,11 +19,13 @@ jobs:
       target: ${{ steps.information.outputs.target }}
       version: ${{ steps.release.outputs.version }}
     steps:
-      - name: Check out code from GitHub
+      - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v2
-      - name: Run add-on information action
+      - name: 🚀 Run add-on information
         id: information
         uses: frenck/action-addon-information@v1
+        with:
+          path: "./"
       - name: ℹ️ Gather version
         id: release
         run: |
